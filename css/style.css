@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #aafddf
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/JEDNOTKA.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+header nav.navbar {
+    z-index: 9999;
+    background-color:rgba(0, 0, 0, .5);
+}
+
+header nav.navbar .navbar-brand {
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+header nav.navbar .navbar-nav .nav-item {
+    margin-right: .5rem;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link {
+    padding: .5rem;
+    color: #FFF;
+    transition: .3s;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link:hover, header nav.navbar .navbar-nav .nav-item.active .nav-link {
+    color: var(--primary-color);
+}
+
+header nav.navbar .navbar-toggler {
+    color: #FFF;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 999;
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+header .header-content {
+    position: absolute;
+    z-index: 999;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .header-content img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #FFF;
+}
+
+header .header-content .content {
+    z-index: 999;
+    margin-top: 20px;
+    text-align: center;
+}
+
+header .header-content .content h2 {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+header .header-content .content p {
+    font-size: 1.3rem;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.vzdelania::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+}
+
+.vzdelania .content {
+    z-index: 999;
+    position: relative;
+    color: #333;
+}
+
+.vzdelania .content h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vzdelania .content .osamotene-vzdelanie {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    padding: 30px;
+    transition: .4s all ease-in-out;
+}
+
+.vzdelania .content .osamotene-vzdelanie:hover {
+    background-color: rgba(30, 130, 76, 0.5);
+}
+
+.vzdelania .content .osamotene-vzdelanie * {
+    text-align: center;
+}
+
+.vzdelania .content .osamotene-vzdelanie i {
+    font-size: 3rem;
+    color: rgba(30, 130, 76, 0.5);
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.vzdelania .content .osamotene-vzdelanie:hover i {
+    color: rgba(30, 130, 76, 0.5);
+}
+
+.vzdelania .content .osamotene-vzdelanie h4 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.vzdelania .content .osamotene-vzdelanie p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+
+.sekcia_zmena {
+    background-color: rgba(30, 130, 76, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.sekcia_zmena::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.sekcia_zmena h2 {
+    color: #FFF;
+    font-weight: 600;
+    font-weight: 2.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.sekcia_zmena .vpisane_opravy {
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    margin: 35px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.sekcia_zmena .vpisane_opravy p {
+    margin-bottom: 20px;
+}
+
+
+
+.sekcia_zmena .vpisane_opravy h4 {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.sekcia_zmena .vpisane_opravy p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+.sekcia_zmena .vpisane_opravy button{
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+
+.sekcia_zmena .tlacidlo_dizajn {
+    border: 3px solid var(--primary-color);
+    padding: 5px 5px;
+    color: rgb(255,255,255);
+    font-weight: 1000;
+    font-size: 1rem;
+}
+
+.sekcia_zmena .containerR{
+     width: 50%;
+    height: 35vh;
+}
+
+
+
+footer {
+    background-color: #222;
+}
+
+footer .footer .footer-social ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer .footer-social ul li {
+    margin: 0 .5rem;
+    display: inline-block;
+}
+
+footer .footer .footer-social ul li a {
+    color: #FFF;
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+footer .footer .footer-social ul li a:hover {
+    color: var(--primary-color);
+}
+
+footer .footer .footer-social ul li a i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+footer .footer .footer-bottom {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+}
+
